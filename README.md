@@ -1,6 +1,11 @@
 # Solace tracing for the MuleSoft JMS connector
+This is built using the code from the MuleSoft repository:
 
-This branch adds OpenTelemetry tracing to the standard MuleSoft JMS connector, including Solace's native (broker-level) trace context. Your flows keep the standard `jms:` components (listener, publish, consume, publish-consume, ack, recover-session), and transactions keep working as they do today.
+https://github.com/mulesoft/mule-jms-connector
+
+Note that this is not the latest MuleSoft JMS connector code.
+
+This repository adds OpenTelemetry tracing to the standard MuleSoft JMS connector, including Solace's native (broker-level) trace context. Your flows keep the standard `jms:` components (listener, publish, consume, publish-consume, ack, recover-session), and transactions keep working as they do today.
 
 Apps using Solace through the **Generic Connection** get one trace across Mule and the broker:
 
